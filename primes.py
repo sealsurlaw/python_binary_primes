@@ -10,7 +10,7 @@ primes = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67
 i = 0
 for x in primes:
   print("{:4d}: ".format(i), end="")
-  for y in range(sys.getsizeof(x)-1,-1,-1):
+  for y in range(31,-1,-1):
     z = (x>>y)&1
     if z == 1:
       print(YELLOW, end="")
